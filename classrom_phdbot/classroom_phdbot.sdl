@@ -1,0 +1,35 @@
+---
+version: "2.0"
+services:
+  phdbot-classroom:
+    image: dreambrooktech/phdbot-classroom:v0.1.1
+    expose:
+      - port: 8022
+        as: 80
+        accept:
+          - classroom.phdbot.cloud
+        to:
+          - global: true
+    env:
+      - url=https://classroom.phdbot.cloud
+profiles:
+  compute:
+    phdbot-classroom:
+      resources:
+        cpu:
+          units: 0.5
+        memory:
+          size: 2Gi
+        storage:
+          - size: 2Gi
+  placement:
+    dcloud:
+      pricing:
+        phdbot-classroom:
+          denom: uakt
+          amount: 1000
+deployment:
+  phdbot-classroom:
+    dcloud:
+      profile: phdbot-classroom
+      count: 1

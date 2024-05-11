@@ -1,0 +1,37 @@
+---
+version: "2.0"
+services:
+  green-depin-web:
+    image: pawelmalak/flame:multiarch2.3.0
+    expose:
+      - port: 5005
+        as: 80
+        accept:
+          - ai4desci.cloud
+        to:
+          - global: true
+    env:
+      - PASSWORD=***********
+      - restart=unless-stopped
+      - url=https://ai4desci.cloud
+profiles:
+  compute:
+    green-depin-web:
+      resources:
+        cpu:
+          units: 0.5
+        memory:
+          size: 128Mi
+        storage:
+          - size: 64Mi
+  placement:
+    dcloud:
+      pricing:
+        green-depin-web:
+          denom: uakt
+          amount: 100000
+deployment:
+  green-depin-web:
+    dcloud:
+      profile: green-depin-web
+      count: 1
