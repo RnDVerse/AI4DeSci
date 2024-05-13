@@ -14,4 +14,4 @@ layout:
 
 # Ecosystem Architecture
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>AI4DeSci Ecosystem Architecture.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>AI4DeSci Ecosystem Architecture.</p></figcaption></figure>
