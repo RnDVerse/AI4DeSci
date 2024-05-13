@@ -1,2 +1,5 @@
 # Human - Human
 
+Human - Human collaboration in science is the most fundamental. These forms of collaboration enable the co-creation of knowledge based on exploration of questions and curiosity. Along the process each individuals involved also need to convince each other to then arrive at a concensus on what the state-of-knowledge are based on existing experimental evidence and understandings.
+
+In the era of AI and Decentralized Science, the human-human component will be the epicenter of trust and key to validating the knowledge produced throughout the ecosystem. In AI4DeSci we aim to build and provide the infrastructure that support this interactions. Blockchain technologies have developed over the years and now mature enough to provide the fundamental building blocks. Data Provenance and Decentralized Cloud are another key infrastructure that enable trust-building and control back to the hand of each member in the community, instead of on the hand of big centralized institution or third-party.&#x20;
