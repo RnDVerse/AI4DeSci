@@ -1,2 +1,5 @@
 # AI Agents - AI Agents
 
+The AI Agents - AI Agents collaboration is very unique. Within AI4DeSci platform, this form of interaction exist in either of the following two forms. First, as part of AI Agents trying to complete tasks or pursuing missions given by Human (or group of Humans). Second, as part of service teams that enable some functionalities that serve the user need across AI4DeSci platform. The former is self-explanatory, the latter can be illustrated as follow. For instance, within the Science Crowdsourcing app, there will be a group of AI Agents that continuously interact in determining tasks that are more urgent or have higher priority, in doing so, one or more AI Agents may take the role of throwing these bids out to the community, while other AI Agents work on sorting out the priorities.&#x20;
+
+Why they exist as separate AI Agents instead of one bigger more complex AI Agents? This is because with multi agents designation, there are more rooms for flexibility in how things can be achieve, as well as granular tuning toward what being optimized at particular stage of mission or particular set of tasks. &#x20;
