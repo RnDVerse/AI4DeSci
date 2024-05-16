@@ -1,0 +1,8 @@
+streamlit==1.21.0
+numpy==1.23.0
+matplotlib
+scikit-learn
+llama-index
+llama-index-llms-ollama
+llama-index-vector-stores-qdrant
+llama-index-embeddings-huggingface

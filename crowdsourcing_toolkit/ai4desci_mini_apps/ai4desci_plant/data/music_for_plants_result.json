@@ -1,0 +1,18 @@
+{
+    "poly_deg2": {
+        "canopy_surface_vs_temperature": "54.10x^2 - 2712.85x + 34008.13",
+        "canopy_surface_vs_temperature_r2": "0.707",
+        "canopy_surface_vs_temperature_water": "2.98x^2 - 275.77x + 5421.77",
+        "canopy_surface_vs_temperature_water_r2": "0.589",
+        "water_consumption_vs_temperature": "38.63x^2 - 1921.19x + 23905.34",
+        "water_consumption_vs_temperature_r2": "0.697"
+    },
+    "poly_deg4": {
+        "canopy_surface_vs_temperature": "-21.49x^4 + 2013.95x^3 - 70640.91x^2 + 1098885.80x - 6395244.11",
+        "canopy_surface_vs_temperature_r2": "0.733",
+        "canopy_surface_vs_temperature_water": "13.09x^4 - 1356.89x^3 + 52660.93x^2 - 906744.06x + 5845656.94",
+        "canopy_surface_vs_temperature_water_r2": "0.644",
+        "water_consumption_vs_temperature": "15.50x^4 - 1428.43x^3 + 49374.05x^2 - 758561.27x + 4371628.56",
+        "water_consumption_vs_temperature_r2": "0.705"
+    }
+}

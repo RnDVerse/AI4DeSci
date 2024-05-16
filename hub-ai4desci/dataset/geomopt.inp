@@ -1,0 +1,4 @@
+ANI-1ccx                # pre-trained model
+geomopt                 # requests geometry optimization
+xyzfile=init.xyz        # initial geometry guess
+optxyz=opt.xyz          # file with optimized geometry

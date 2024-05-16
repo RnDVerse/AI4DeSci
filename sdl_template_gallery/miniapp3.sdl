@@ -1,0 +1,60 @@
+# AI4DeSci MiniApp Template
+
+# Welcome to the Akash Network! 🚀☁
+# This file is called a Stack Definition Laguage (SDL)
+# SDL is a human friendly data standard for declaring deployment attributes. 
+# The SDL file is a "form" to request resources from the Network. 
+# SDL is compatible with the YAML standard and similar to Docker Compose files.
+
+---
+# Indicates version of Akash configuration file. Currently only "2.0" is accepted.
+version: "2.0"
+
+# The top-level services entry contains a map of workloads to be ran on the Akash deployment. Each key is a service name; values are a map containing the following keys:
+# https://akash.network/docs/getting-started/stack-definition-language/#services
+services:
+  miniapp3:
+    image: dreambrooktech/ai4desci_music_analysis:v0.1
+    expose:
+      - port: 8503
+        as: 80
+        accept:
+          - "miniapp3.ai4desci.com"
+        to:
+          - global: true
+    command: ["python", "-m", "streamlit", "run", "ai4desci_music_analysis.py", "--server.port=8503"]
+    env:
+      - "url=https://miniapp3.ai4desci.com"
+
+# The profiles section contains named compute and placement profiles to be used in the deployment.
+# https://akash.network/docs/getting-started/stack-definition-language/#profiles          
+profiles:
+  # profiles.compute is map of named compute profiles. Each profile specifies compute resources to be leased for each service instance uses uses the profile.
+  compute:
+    # The name of the service
+    miniapp3:
+      resources:
+        cpu:
+          units: 2 
+        memory:
+          size: 2Gi 
+        storage:
+          size: 1Gi 
+
+  # profiles.placement is map of named datacenter profiles. Each profile specifies required datacenter attributes and pricing configuration for each compute profile that will be used within the datacenter. It also specifies optional list of signatures of which tenants expects audit of datacenter attributes.       
+  placement:
+    dcloud:
+      pricing:
+        # The name of the service
+        miniapp3:
+          denom: uakt
+          amount: 1000 
+
+# The deployment section defines how to deploy the services. It is a mapping of service name to deployment configuration.
+# https://akash.network/docs/getting-started/stack-definition-language/#deployment
+deployment:
+  # The name of the service
+  miniapp3:
+    dcloud:
+      profile: miniapp3
+      count: 1
