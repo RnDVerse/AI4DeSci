@@ -1,0 +1,40 @@
+---
+version: "2.0"
+services:
+  notes:
+    image: zadam/trilium:latest
+    volumes:
+      - /trilium-data:/home/node/trilium-data 
+    ports:
+      -"8080:8080"
+    expose:
+      - port: 8080
+        as: 80
+        accept:
+          - "notes.ai4desci.com"
+        to:
+          - global: true
+    env:
+      - "url=https://notes.ai4desci.com"
+      
+profiles:
+  compute:
+    notes:
+      resources:
+        cpu:
+          units: 1
+        memory:
+          size: 1Gi
+        storage:
+          - size: 5Gi
+  placement:
+    dcloud:
+      pricing:
+        notes:
+          denom: uakt
+          amount: 1000
+deployment:
+  notes:
+    dcloud:
+      profile: notes
+      count: 1

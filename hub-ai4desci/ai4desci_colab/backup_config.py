@@ -19,12 +19,30 @@ if not os.path.exists(data_directory):
 # avoid having to rebuild the JupyterHub container every time we change a
 # configuration parameter.
 
-# We rely on environment variables to configure JupyterHub so that we
-# avoid having to rebuild the JupyterHub container every time we change a
-# configuration parameter.
+# Create a custom spawner class to handle volume and network configurations
+class CustomDockerSpawner(DockerSpawner):
+    def start(self):
+        # Volumes map the host file/directory to the container file/directory
+        # This configuration ensures that these paths are consistent and preserved across spawns
+        self.volumes = {
+            'jupyterhub-data': '/data',
+            '/var/run/docker.sock': '/var/run/docker.sock:rw'
+        }
+
+        # Configure the network the containers will connect to
+        self.network_name = 'jupyterhub-network'
+
+        return super().start()
+
+# Use the custom spawner
+c.JupyterHub.spawner_class = CustomDockerSpawner
+
+
+# Path to the configuration file in the container
+c.JupyterHub.config_file = '/srv/jupyterhub/jupyterhub_config.py:ro'
 
 # Spawn single-user servers as Docker containers
-c.JupyterHub.spawner_class = "dockerspawner.DockerSpawner"
+#c.JupyterHub.spawner_class = "dockerspawner.DockerSpawner"
 
 # Spawn containers from this image
 c.DockerSpawner.image = os.environ["DOCKER_NOTEBOOK_IMAGE"]
@@ -36,9 +54,8 @@ c.DockerSpawner.network_name = network_name
 
 # Explicitly set notebook directory because we'll be mounting a volume to it.
 # Most `jupyter/docker-stacks` *-notebook images run the Notebook server as
-# user `jovyan`, and set the notebook directory to `/home/jovyan/work`.
+# user `jovyan`, and set the notebook directory to `/home/akash/notebook`.
 # We follow the same convention.
-
 notebook_dir = os.environ.get("DOCKER_NOTEBOOK_DIR", "/home/ai4desci/notebook")
 c.DockerSpawner.notebook_dir = notebook_dir
 

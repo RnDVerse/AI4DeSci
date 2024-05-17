@@ -1,0 +1,66 @@
+---
+version: "2.0"
+services:
+  jupyter-hub:
+    image: dreambrooktech/colab-ai4desci:v0.1
+    container_name: hub-ai4desci
+    networks:
+      - jupyterhub-network
+    volumes:
+      - type: bind
+        source: ./jupyterhub_config.py
+        target: /srv/jupyterhub/jupyterhub_config.py
+        read_only: true
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+        read_write: true
+      - type: volume
+        source: jupyterhub-data
+        target: /data
+    expose:
+      - port: 8000
+        as: 80
+        accept:
+          - "colab.ai4desci.com"
+        to:
+          - global: true
+    environment:
+      JUPYTERHUB_ADMIN : admin
+      DOCKER_NETWORK_NAME: jupyterhub-network
+      DOCKER_NOTEBOOK_IMAGE: quay.io/jupyter/base-notebook:latest
+      DOCEKR_NOTEBOOK_DIR: /home/ai4desci/notebook
+      URL: https://colab.ai4desci.com
+    deploy:
+      replicas: 1
+
+volumes:
+  jupyterhub-data:
+
+networks:
+  jupyterhub-network:
+    name: jupyterhub-network
+
+profiles:
+  compute:
+    jupyter-hub:
+      resources:
+        cpu:
+          units: 8
+        memory:
+          size: 8Gi
+        storage:
+          - size: 24Gi
+
+  placement:
+    dcloud:
+      pricing:
+        jupyter-hub:
+          denom: uakt
+          amount: 1000
+
+deployment:
+  jupyter-hub:
+    dcloud:
+      profile: jupyter-hub
+      count: 1

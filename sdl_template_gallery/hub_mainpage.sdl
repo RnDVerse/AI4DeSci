@@ -1,4 +1,4 @@
-# planta-musica Deployment on Akash Server. 
+# AI4DeSci MiniApp Template
 
 # Welcome to the Akash Network! 🚀☁
 # This file is called a Stack Definition Laguage (SDL)
@@ -13,21 +13,18 @@ version: "2.0"
 # The top-level services entry contains a map of workloads to be ran on the Akash deployment. Each key is a service name; values are a map containing the following keys:
 # https://akash.network/docs/getting-started/stack-definition-language/#services
 services:
-  # The name of the service "planta-musica"
-  planta-musica:
-    # The docker container image with version.
-    image: dreambrooktech/plantamusica:v0.1.2
-    env: 
-      - 'url=https://app.plantamusica.cloud'
-    # You can map ports here 
+  thehub:
+    image: dreambrooktech/ai4desci_hub_mainpage:v0.1
     expose:
-      - port: 8501
+      - port: 8522
         as: 80
         accept:
-          - "app.plantamusica.cloud"
+          - "hub.ai4desci.com"
         to:
           - global: true
-    command: ["python", "-m", "streamlit", "run", "plantamusica.py", "--server.port=8501"]
+    command: ["python", "-m", "streamlit", "run", "ai4desci_hub_mainpage.py", "--server.port=8522"]
+    env:
+      - "url=https://hub.ai4desci.com"
 
 # The profiles section contains named compute and placement profiles to be used in the deployment.
 # https://akash.network/docs/getting-started/stack-definition-language/#profiles          
@@ -35,12 +32,12 @@ profiles:
   # profiles.compute is map of named compute profiles. Each profile specifies compute resources to be leased for each service instance uses uses the profile.
   compute:
     # The name of the service
-    planta-musica:
+    thehub:
       resources:
         cpu:
-          units: 4 
+          units: 1
         memory:
-          size: 2Gi 
+          size: 1Gi 
         storage:
           size: 1Gi 
 
@@ -49,7 +46,7 @@ profiles:
     dcloud:
       pricing:
         # The name of the service
-        planta-musica:
+        thehub:
           denom: uakt
           amount: 1000 
 
@@ -57,7 +54,7 @@ profiles:
 # https://akash.network/docs/getting-started/stack-definition-language/#deployment
 deployment:
   # The name of the service
-  planta-musica:
+  thehub:
     dcloud:
-      profile: planta-musica
+      profile: thehub
       count: 1

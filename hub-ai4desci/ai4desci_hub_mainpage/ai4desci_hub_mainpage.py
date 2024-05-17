@@ -115,7 +115,7 @@ def navbar():
 
 # Add the sidebar with buttons linking to different webpages
 st.sidebar.header("AI4DeSci Dashboard")
-if st.sidebar.button("Science Crowdfunding"):
+if st.sidebar.button("Science Crowdsourcing"):
     st.experimental_set_query_params()
     st.markdown("""<script>window.location.href = 'https://app.ai4desci.com/';</script>""", unsafe_allow_html=True)
 
@@ -243,85 +243,64 @@ def app(name, description, image, link, repo_link):
     st.write("")
 
 category("🤓 Human - 🤖 AI Agents Cloud Collaboration ")
-col1, col2, col3 = st.columns(3)
+col1, col2= st.columns(2)
 with col1:
     app(
-        "PlantaMusica",
-        "AI-Powered Plant Growth Monitoring.",
-        "images/phdbot_1a.png",
-        "https://app.plantamusica.cloud/",
-        "http://github.com/rndverse/plantamusica",
+        "AI4DeSci Colab",
+        "AI-Agents Powered Collaboration JupyterHub Servers.",
+        "images/human_agent.png",
+        "https://colab.ai4desci.com/",
+        "j36uqo3p5peil7fcv6nngdrb2o.ingress.ai4desci.network",
     )
+
 with col2:
-    app(
-        "PhDBot Peer-Review",
-        "PhDBot that assist you in analyzing paper.",
-        "images/phdbot_1a.png",
-        "https://classroom.phdbot.cloud",
-        "http://mb26hveqn5acl3d2aqhfi94ok4.ingress.greendepin.cloud",
-    )
-with col3:
     app(
         "PhDBot Classroom",
         "Train your own domain-specific PhDBot.",
         "images/phdbot_1a.png",
         "https://classroom.phdbot.cloud",
-        "http://mb26hveqn5acl3d2aqhfi94ok4.ingress.greendepin.cloud",
+        "mb26hveqn5acl3d2aqhfi94ok4.ingress.greendepin.cloud",
     )
     
 category("🤖 AI Agents - 🤖 AI Agents Cloud Collaboration ")
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(2)
 with col1:
     app(
-        "CSV Snowpark Uploader",
-        "Visualize your model to debug the output. This app uses Tensorflow and GAN to generate photorealistic images.",
-        "images/phdbot_1a.png",
-        "https://classroom.phdbot.cloud",
-        "http://mb26hveqn5acl3d2aqhfi94ok4.ingress.greendepin.cloud",
+        "AI4DeSci Multi Agents Colab Workspaces",
+        "AI-Agents collaborative environment based on various ready-to-deploy AI-agent engine.",
+        "images/agent_agent.png",
+        "https://colab.ai4desci.com/",
+        "j36uqo3p5peil7fcv6nngdrb2o.ingress.ai4desci.network",
     )
 with col2:
     app(
-        "DCR Setup Assistant",
-        "Create machine learning tools for others to use your models. This app generates images using the Deep Dream technique.",
-        "images/phdbot_1a.png",
-        "https://classroom.phdbot.cloud",
-        "http://mb26hveqn5acl3d2aqhfi94ok4.ingress.greendepin.cloud",
-    )
-with col3:
-    app(
-        "Snowflake Table Catalog",
-        "Explore large datasets for input into ML models. This app displays self-driving car data and does real-time detection using YOLO.",
-        "images/phdbot_1a.png",
-        "https://classroom.phdbot.cloud",
-        "http://mb26hveqn5acl3d2aqhfi94ok4.ingress.greendepin.cloud",
+        "AI4DeSci Agents - AgentVerse Integration",
+        "AI-Agents living within the AI4DeSci ecosystem can interact with external agents, for instance via AgentVerse.",
+        "images/agentverse.png",
+        "https://agentverse.ai",
+        "coming soon",
     )
 
+
 category("🤓 Human - 🤓 Human Cloud Collaboration ")
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(2)
 with col1:
     app(
         "Trilium Notebook Hosted @ Akash",
-        "Easily collect data from users and write to a database.",
+        "Easily Interact and work with other humans via self-hosted full-fledge note environment.",
         "images/ai4desci_notebook.png",
         "https://notes.ai4desci.com",
-        "http://mb26hveqn5acl3d2aqhfi94ok4.ingress.greendepin.cloud",
+        "vbm3ss5q1pc8j83qm4g014rjvg.ingress.ai4desci.network",
     )
 with col2:
-    app(
-        "Second Place: the Oracle of Omaha",
-        "Quickly generate a PDF file using data collected from user input.",
-        "images/phdbot_1a.png",
-        "https://classroom.phdbot.cloud",
-        "http://mb26hveqn5acl3d2aqhfi94ok4.ingress.greendepin.cloud",
+   app(
+        "Human-Human Jupyter Notebook Collab",
+        "Using the JupyterHub group based server, user can work together on analysis code and more.",
+        "images/human_agent.png",
+        "https://colab.ai4desci.com/",
+        "j36uqo3p5peil7fcv6nngdrb2o.ingress.ai4desci.network",
     )
-with col3:
-    app(
-        "Third Place: Instant Insight",
-        "Allow viewers of your app to collaborate via a commenting feature.",
-        "images/phdbot_1a.png",
-        "https://classroom.phdbot.cloud",
-        "mb26hveqn5acl3d2aqhfi94ok4.ingress.greendepin.cloud",
-    )
+
 
 # st.header("[ADD SOME LOGO OF TECH STACK USED HERE] ") Trilium logo here
 

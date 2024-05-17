@@ -326,8 +326,8 @@ with col1:
         "PhDBot Research [Test and Dev]",
         "Collaborate with your AI-Agent to label research Data.",
         "images/ai4desci_miniapp_data.png",
-        "https://snowpark-python-loader.streamlit.app/",
-        "https://github.com/mellymel-appdev4ever/snowloader2",
+        "https://miniapp4.ai4desci.com",
+        "coming soon",
     )
 with col2:
     app(
@@ -341,7 +341,7 @@ with col3:
     app(
         "PhDBot University [Design Stage]",
         "Digital Space for PhDBot Teaching and Learning from Human",
-        "images/phdbot_1a.png",
+        "images/agent_agent.png",
         "https://university.phdbot.cloud/",
         "not-there-yet",
     )
@@ -358,10 +358,10 @@ with col1:
     )
 with col2:
     app(
-        "Label Studio Toolkits ",
-        "We will Host various Label-Studio Based Science Crowdsourcing Toolkit for multi-modal data labelling.",
-        "images/label_studio.png",
-        "https://external2.ai4desci/",
+        "AgentVerse Integration ",
+        "We will Host various AgentVerse AI-Agents and vice-versa.",
+        "images/agentverse.png",
+        "https://agentverse.ai/",
         "not-there-yet",
     )
 with col3:
