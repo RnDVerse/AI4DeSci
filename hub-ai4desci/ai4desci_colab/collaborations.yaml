@@ -1,0 +1,13 @@
+projects:
+  akash_wg:
+    members:
+      - akash1
+      - akash2
+      - akash3
+  akash_sig:
+    members:
+      - akash1
+      - akash2
+      - akash3
+      - akash4
+      - akash5

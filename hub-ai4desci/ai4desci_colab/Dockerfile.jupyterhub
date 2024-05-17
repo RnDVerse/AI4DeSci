@@ -1,0 +1,29 @@
+# Copyright (c) Jupyter Development Team.
+# Distributed under the terms of the Modified BSD License.
+ARG JUPYTERHUB_VERSION
+FROM quay.io/jupyterhub/jupyterhub:$JUPYTERHUB_VERSION
+
+# Set ENV variable
+ENV DOCKER_NETWORK_NAME=jupyterhub-network
+ENV JUPYTERHUB_ADMIN=admin
+ENV DOCKER_NOTEBOOK_IMAGE=quay.io/jupyter/base-notebook:latest
+ENV DOCKER_NOTEBOOK_DIR=/home/ai4desci/notebook
+ENV PUBLIC_URL=https://hub.ai4desci.com
+# ENV JUPYTERHUB_DB_URL=postgres://username:password@hostname/dbname
+
+
+
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
+# Copy the JupyterHub configuration file and collaborations file into the container
+COPY jupyterhub_config.py /srv/jupyterhub/jupyterhub_config.py
+COPY collaborations.yaml /srv/jupyterhub/collaborations.yaml
+
+# Install dockerspawner, nativeauthenticator
+# hadolint ignore=DL3013
+RUN python3 -m pip install --no-cache-dir \
+    dockerspawner \
+    jupyterhub-nativeauthenticator
+
+CMD ["jupyterhub", "-f", "/srv/jupyterhub/jupyterhub_config.py"]
