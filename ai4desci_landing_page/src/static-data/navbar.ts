@@ -4,12 +4,6 @@ import { v4 as uuid } from "uuid";
 export const navbarData: NavbarItem[] = [
   {
     id: uuid(),
-    title: "Features",
-    href: "#features",
-    external: false,
-  },
-  {
-    id: uuid(),
     title: "About",
     href: "#about",
     external: false,
@@ -22,9 +16,15 @@ export const navbarData: NavbarItem[] = [
   },
   {
     id: uuid(),
-    title: "Roadmap",
-    href: "#roadmap",
-    external: false,
+    title: "Collaborative Cloud",
+    href: "https://hub.ai4desci.com",
+    external: true,
+  },
+  {
+    id: uuid(),
+    title: "Science Crowdsourcing",
+    href: "https://app.ai4desci.com",
+    external: true,
   },
   {
     id: uuid(),
@@ -39,8 +39,8 @@ export const navbarData: NavbarItem[] = [
       {
         id: uuid(),
         title: "Docs",
-        href: "/docs",
-        external: false,
+        href: "https://docs.ai4desci.com",
+        external: true,
       },
       {
         id: uuid(),
@@ -52,18 +52,6 @@ export const navbarData: NavbarItem[] = [
         id: uuid(),
         title: "Blog",
         href: "/blog",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Sign in",
-        href: "/auth/signin",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Sign up",
-        href: "/auth/signup",
         external: false,
       },
     ],

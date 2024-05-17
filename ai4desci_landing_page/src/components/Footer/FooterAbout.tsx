@@ -6,14 +6,14 @@ export default function FooterAbout() {
     <div className="mb-20 max-w-[330px]">
       <Link href="/" className="mb-6 inline-block">
         <Image
-          src="/images/logo/logo-dark.svg"
+          src="/images/logo/AI4DeSci_Logo.png"
           alt="logo"
           width={215}
           height={50}
           className="hidden dark:block"
         />
         <Image
-          src="/images/logo/logo-light.svg"
+          src="/images/logo/AI4DeSci_Logo.png"
           alt="logo"
           width={215}
           height={50}
@@ -22,7 +22,7 @@ export default function FooterAbout() {
       </Link>
 
       <p className="mb-10 text-base text-dark-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sustainable Infrastructure for AI-Empowered Open & Collaborative Decentralized Science 
       </p>
       <div className="flex items-center space-x-5">
         <a

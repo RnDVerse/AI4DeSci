@@ -11,9 +11,12 @@ export default function Testimonials() {
     <section id="testimonial" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
         <SectionTitle
-          mainTitle="TESTIMONIAL"
-          title="What Our Clients Say About Us"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus."
+          mainTitle="Akashathon"
+          title="This project is a BUIDL submission for Akashathon²  2024 AI Track"
+          paragraph="This track challenges participants to explore the integration of artificial intelligence (AI) technologies within the Akash Network, 
+          specifically focusing on GPU usage. As AI applications become increasingly complex and resource-intensive, 
+          the need for scalable, open source and cost-effective infrastructure is paramount. 
+          Akash Network offers a unique solution by enabling developers to deploy and scale their AI workloads on a decentralized network of GPUs."
         />
 
         <div className="w-full px-4">

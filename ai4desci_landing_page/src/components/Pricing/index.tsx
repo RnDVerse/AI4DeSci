@@ -8,9 +8,9 @@ export default function Pricing() {
     <section id="pricing" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
         <SectionTitle
-          mainTitle="PRICING PLANS"
-          title="Affordable Pricing With Simple Plans"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus."
+          mainTitle="ECONOMICS"
+          title="Sustainable Economics is What we are after in AI4DeSci"
+          paragraph="It is essential to have an innovative business model that allow the ecosystem to propel itself, sustainably. The pricing are determined by community and is evolving as it goes."
         />
 
         <div className="relative z-10 flex flex-wrap justify-center overflow-hidden rounded drop-shadow-light dark:drop-shadow-none">
@@ -76,13 +76,13 @@ export default function Pricing() {
 
         <div className="pt-12 text-center">
           <h3 className="mb-5 font-heading text-xl font-medium text-dark dark:text-white sm:text-3xl">
-            Looking for a company solution?
+            Looking for a custom solution?
           </h3>
           <Link
             href="/support"
             className="text-base text-dark-text underline-offset-2 duration-200 hover:text-primary hover:underline"
           >
-            Contact our team to get a quote.
+            Reach out with us in our Discord Community.
           </Link>
         </div>
       </div>

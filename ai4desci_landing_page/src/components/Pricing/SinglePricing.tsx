@@ -40,11 +40,11 @@ export default function SinglePricing({ price }: any) {
                 currency: "USD",
               })}{" "}
             </sup>
-            /month
+            / Mini-App or Colab Space
           </h3>
 
           <p className="mx-auto max-w-[300px] text-base text-dark-text">
-            Lorem ipsum dolor sit ametion consectetur adipisc elit.
+            Simple pricing to be paid-as-you-growth, a lot of free tools, but also superb premium support from the communities for those need it. 
           </p>
         </div>
         <div className="space-y-4 px-6 pb-[60px] pt-10 text-left sm:px-10 md:px-8 lg:px-10 xl:px-20">
@@ -80,7 +80,7 @@ export default function SinglePricing({ price }: any) {
           onClick={handleSubscription}
           className={`inline-flex items-center rounded px-8 py-[14px] font-heading text-base text-white duration-200 ${price?.nickname === "Professional" ? "bg-primary hover:bg-primary/90" : "bg-dark hover:bg-dark/90"}`}
         >
-          Join This Plan
+          Start Your AI4DeSci Space  
           <span className="pl-3">
             <svg
               width="16"

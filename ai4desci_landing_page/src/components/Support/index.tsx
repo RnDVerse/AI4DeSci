@@ -12,11 +12,10 @@ export default function Support() {
                     SUPPORT{" "}
                   </span>
                   <h2 className="mb-5 font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]">
-                    Need Any Help? Say hello
+                    Need Any Help? Want to Collaborate? Say Hello!
                   </h2>
                   <p className="text-base text-dark-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Donec vitae tortor aliquam ante.
+                   Feel free to reach out to our team and work together toward AI integration for Decentralized Science.
                   </p>
                 </div>
               </div>
@@ -25,11 +24,11 @@ export default function Support() {
                 <div className="flex items-center">
                   <span className="mr-10 h-1 w-full max-w-[200px] bg-dark dark:bg-white"></span>
                   <a
-                    href="mailto:info@AI4DeSci.com"
+                    href="mailto:dev@ai4desci.com"
                     className="font-heading text-xl text-dark dark:text-white md:text-3xl lg:text-xl xl:text-3xl"
                   >
                     {" "}
-                    info@AI4DeSci.com{" "}
+                    dev@ai4desci.com{" "}
                   </a>
                 </div>
               </div>
@@ -42,7 +41,7 @@ export default function Support() {
                     Email Address
                   </h3>
                   <p className="text-base font-medium text-dark-text">
-                    support@startup.com
+                    dev@ai4desci.com
                   </p>
                 </div>
               </div>
@@ -62,7 +61,8 @@ export default function Support() {
                     Office Location
                   </h3>
                   <p className="text-base font-medium text-dark-text">
-                    76/A, Green valle, Califonia USA.
+                    27 Huqiu Street, The Bund, Shanghai, P.R. China.
+                    127 Robinson Street, Singapore.
                   </p>
                 </div>
               </div>

@@ -12,7 +12,7 @@ export default async function HomeBlogSection() {
         <SectionTitle
           mainTitle="BLOGS"
           title="Latest News & Articles From Our Blog"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus."
+          paragraph="Learn more about us and stay updated with our progress. "
         />
 
         <div className="w-full border-b pb-20 dark:border-[#2E333D]">

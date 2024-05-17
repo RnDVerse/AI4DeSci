@@ -20,7 +20,7 @@ export const footerLinks: FooterLink[] = [
     href: "/",
     external: false,
     badge: {
-      text: "Hiring",
+      text: "Join Us",
     },
   },
   {

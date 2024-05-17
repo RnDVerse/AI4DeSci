@@ -42,10 +42,10 @@ export default function AboutContent() {
         {activeTab === "about" && (
           <TabPanel
             title="DeSci Collaborative Cloud, AI-Empowered Science Crowdfunding"
-            image1="/images/about/image-1.jpg"
-            image1Alt="about image 1"
-            image2="/images/about/image-2.jpg"
-            image2Alt="about image 2"
+            image1="/images/about/ecosystem.png"
+            image1Alt="AI4DeSci Ecosystem"
+            image2="/images/about/Flywheel.png"
+            image2Alt="AI4DeSci Flywheel"
           >
             <p className="mb-6 text-base text-dark-text">
             AI4DeSci (www.AI4DeSci.com) is an ecosystem that is dedicated to continuously 
@@ -66,10 +66,10 @@ export default function AboutContent() {
         {activeTab === "mission" && (
           <TabPanel
             title="Built-with Latest Tools and Technologies"
-            image1="/images/about/image-1.jpg"
-            image1Alt="about image 1"
-            image2="/images/about/image-2.jpg"
-            image2Alt="about image 2"
+            image1="/images/about/Types_of_work.png"
+            image1Alt="AI4DeSci types of work"
+            image2="/images/about/collaborations.png"
+            image2Alt="Collaboration forms in AI4DeSci"
             leftContent
           >
             <p className="mb-6 text-base text-dark-text">
@@ -88,10 +88,10 @@ export default function AboutContent() {
         {activeTab === "vision" && (
           <TabPanel
             title="Sustainable Infrastructure for AI-Empowered Decentralized Science"
-            image1="/images/about/image-1.webp"
-            image1Alt="about image 1"
-            image2="/images/about/image-2.webp"
-            image2Alt="about image 2"
+            image1="/images/about/app_ai4desci.png"
+            image1Alt="AI4DeSci app"
+            image2="/images/about/workflow.png"
+            image2Alt="AI4DeSci Workflow"
           >
             <p className="mb-6 text-base text-dark-text">
               What does we mean by Sustainable Infrastructure in the context of Decentralized Science?

@@ -30,9 +30,9 @@ export default function Portfolio() {
     <section id="portfolio" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
         <SectionTitle
-          mainTitle="PORTFOLIO"
-          title="Gallery, Previews and Portfolio"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus."
+          mainTitle="Use Case"
+          title="DeSci Collaborative Cloud  & Science Crowdsourcing"
+          paragraph="We focus on two use cases: DeSci Collaborative Cloud that empower Idea Creations and Science Crowdsourcing that brings AI-Empowered Decentralized Science to be More Accessible to the Public."
         />
 
         <div className="w-full">
@@ -66,7 +66,7 @@ export default function Portfolio() {
 
           <div className="w-full pt-10 text-center">
             <a
-              href="#"
+              href="https://app.ai4desci.com"
               className="inline-flex items-center rounded bg-primary px-8 py-[14px] font-heading text-base text-white hover:bg-opacity-90"
             >
               See More Projects

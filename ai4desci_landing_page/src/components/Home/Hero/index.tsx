@@ -20,7 +20,7 @@ export default function Hero() {
               <h1 className="mb-5 font-heading text-2xl font-semibold dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]">
                 Integrated Infrastructure for your {" "}
                 <Typewriter
-                  words={["DeSci Collaborative Cloud", "Science Crowdfunding", "AI4S Application"]}
+                  words={["DeSci Collaborative Cloud", "Science Crowdsourcing", "AI4S Application"]}
                   cursor
                   loop={0}
                   cursorStyle="|"

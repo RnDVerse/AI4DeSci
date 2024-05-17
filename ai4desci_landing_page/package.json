@@ -1,11 +1,11 @@
 {
-  "name": "go",
+  "name": "ai4desci",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "prisma generate && next build",
-    "start": "next start",
+    "start": "HOST=0.0.0.0 PORT=3003 next start",
     "lint": "next lint"
   },
   "dependencies": {

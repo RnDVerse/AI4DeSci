@@ -56,7 +56,7 @@ export default function Signup() {
                   Create your Account
                 </h1>
                 <p className="mb-12 text-base font-medium text-dark-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Advanced full-auth system is under development
                 </p>
 
                 <h3 className="mb-8 font-heading text-xl text-dark dark:text-white">
@@ -169,7 +169,7 @@ export default function Signup() {
                               [e.target.name]: e.target.value,
                             })
                           }
-                          placeholder="Jhon Andrio"
+                          placeholder="AI4DeSci User"
                           className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
                         />
                       </div>
@@ -192,7 +192,7 @@ export default function Signup() {
                               [e.target.name]: e.target.value,
                             })
                           }
-                          placeholder="jhonandrio@domain.com"
+                          placeholder="user@ai4desci.com"
                           className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
                         />
                       </div>

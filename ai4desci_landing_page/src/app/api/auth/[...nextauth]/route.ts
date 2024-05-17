@@ -19,12 +19,12 @@ const authOptions: NextAuthOptions = {
     CredentialsProvider({
       name: "credentials",
       credentials: {
-        email: { label: "Email", type: "text", placeholder: "jsmith" },
+        email: { label: "Email", type: "text", placeholder: "ai4desci" },
         password: { label: "Password", type: "password" },
         username: {
           label: "Username",
           type: "text",
-          placeholder: "John Smith",
+          placeholder: "AI4DeSci User",
         },
       },
       async authorize(credentials) {

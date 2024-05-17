@@ -6,7 +6,7 @@ export const featuresData: Feature[] = [
     id: uuid(),
     title: "Decentralized First",
     description:
-      "Why we promote decentralization , reason , accelerate ",
+      "We promote decentralization, decentralization preserve diversity, encourage consensus, and prevent monolithic bias.",
     icon: (
       <svg width="44" height="44" viewBox="0 0 44 44" className="fill-current">
         <path d="M3.66663 23.8333H14.6666V38.5H3.66663V23.8333ZM16.5 5.5H27.5V38.5H16.5V5.5Z" />
@@ -21,7 +21,7 @@ export const featuresData: Feature[] = [
     id: uuid(),
     title: "High-quality Collaboration",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "High-quality science are accelerated when collaborations become more accessible and open.",
     icon: (
       <svg width="44" height="44" viewBox="0 0 44 44" className="fill-current">
         <path d="M22.9424 2.39982L39.0226 12.0468C39.1585 12.1282 39.271 12.2434 39.3492 12.3813C39.4273 12.5191 39.4684 12.6749 39.4684 12.8333C39.4684 12.9918 39.4273 13.1475 39.3492 13.2854C39.271 13.4232 39.1585 13.5384 39.0226 13.6198L22.0001 23.8333L4.97756 13.6198C4.84161 13.5384 4.72908 13.4232 4.65094 13.2854C4.57281 13.1475 4.53174 12.9918 4.53174 12.8333C4.53174 12.6749 4.57281 12.5191 4.65094 12.3813C4.72908 12.2434 4.84161 12.1282 4.97756 12.0468L21.0559 2.39982C21.341 2.22851 21.6674 2.138 22.0001 2.138C22.3327 2.138 22.6591 2.22851 22.9442 2.39982H22.9424Z" />
