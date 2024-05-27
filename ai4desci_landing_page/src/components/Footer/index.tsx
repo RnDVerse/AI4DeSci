@@ -53,11 +53,11 @@ export default function Footer() {
                     Toll Free Customer Care
                   </p>
                   <a
-                    href="tel:+(1) 123 456 7890"
+                    href="tel:+(86) 021 6333 7381"
                     className="font-heading text-base text-dark hover:text-primary dark:text-white dark:hover:text-primary"
                   >
                     {" "}
-                    +(1) 123 456 7890{" "}
+                    +(86) 021 6333 7381{" "}
                   </a>
                 </div>
                 <div>

@@ -11,12 +11,9 @@ export default function Testimonials() {
     <section id="testimonial" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
         <SectionTitle
-          mainTitle="Akashathon"
-          title="This project is a BUIDL submission for Akashathon²  2024 AI Track"
-          paragraph="This track challenges participants to explore the integration of artificial intelligence (AI) technologies within the Akash Network, 
-          specifically focusing on GPU usage. As AI applications become increasingly complex and resource-intensive, 
-          the need for scalable, open source and cost-effective infrastructure is paramount. 
-          Akash Network offers a unique solution by enabling developers to deploy and scale their AI workloads on a decentralized network of GPUs."
+          mainTitle="How it Works"
+          title="Learn how the AI4DeSci can work to your benefit"
+          paragraph="We help Researchers and Entrepreur in developing their own AI-empowered infrastructure for DeSci collaboration and Science Crowdsourcing"
         />
 
         <div className="w-full px-4">
@@ -70,7 +67,7 @@ export default function Testimonials() {
                     gradientUnits="userSpaceOnUse"
                   >
                     <stop stopColor="#ABBCFF" />
-                    <stop offset="0.859375" stopColor="#4A6CF7" />
+                    <stop offset="0.859375" stopColor="#32A1B0" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -90,7 +87,16 @@ export default function Testimonials() {
             >
               {testimonialData.map((testimonial) => (
                 <SwiperSlide key={testimonial?.id}>
-                  <SingleTestimonial testimonial={testimonial} />
+                  <iframe 
+                    width="1120" 
+                    height="630" 
+                    src="https://www.youtube.com/embed/GEZJPqxpQLc?si=l8bqu22F-N7ipWKl" 
+                    title="YouTube video player" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen
+                  ></iframe>
                 </SwiperSlide>
               ))}
             </Swiper>

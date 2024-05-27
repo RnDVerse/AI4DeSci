@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "prisma generate && next build",
     "start": "HOST=0.0.0.0 PORT=3003 next start",
+    "test": "HOST=localhost PORT=3001 next start", 
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^5.1.2",
     "@next-auth/prisma-adapter": "^1.0.7",
     "@portabletext/react": "^3.0.11",
     "@sanity/image-url": "^1.0.2",

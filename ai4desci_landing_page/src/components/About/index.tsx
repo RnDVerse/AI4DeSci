@@ -62,7 +62,7 @@ export default function About() {
                   gradientUnits="userSpaceOnUse"
                 >
                   <stop stopColor="#ABBCFF" />
-                  <stop offset="0.859375" stopColor="#4A6CF7" />
+                  <stop offset="0.859375" stopColor="#32A1B0" />
                 </linearGradient>
               </defs>
             </svg>

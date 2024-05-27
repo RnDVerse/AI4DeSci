@@ -151,31 +151,31 @@ hide_sidebar_css = """
 """
 st.markdown(hide_sidebar_css, unsafe_allow_html=True)
 
-# Add JavaScript to toggle the sidebar visibility
-toggle_sidebar_js = """
-<script>
-    function toggleSidebar() {
-        var sidebar = document.querySelector('.css-1lcbmhc');
-        if (sidebar.style.display === 'none') {
-            sidebar.style.display = 'block';
-        } else {
-            sidebar.style.display = 'none';
-        }
-    }
-</script>
-"""
-st.markdown(toggle_sidebar_js, unsafe_allow_html=True)
+# # Add JavaScript to toggle the sidebar visibility
+# toggle_sidebar_js = """
+# <script>
+#     function toggleSidebar() {
+#         var sidebar = document.querySelector('.css-1lcbmhc');
+#         if (sidebar.style.display === 'none') {
+#             sidebar.style.display = 'block';
+#         } else {
+#             sidebar.style.display = 'none';
+#         }
+#     }
+# </script>
+# """
+# st.markdown(toggle_sidebar_js, unsafe_allow_html=True)
 
-# Add a button to toggle the sidebar
-st.markdown('<button class="sidebar-toggle" onclick="toggleSidebar()">Toggle Sidebar</button>', unsafe_allow_html=True)
+# # Add a button to toggle the sidebar
+# st.markdown('<button class="sidebar-toggle" onclick="toggleSidebar()">Toggle Sidebar</button>', unsafe_allow_html=True)
 
-# Sidebar content
-with st.sidebar:
-    st.sidebar.header("AI4DeSci Dashboard")
-    st.sidebar.button("[Collaboration Hub](%s)" % "https://hub.ai4desci.com" )
-    st.sidebar.button("[Public Collaborative Journal Note [pass: akashathon2024]](%s)" % "https://notes.ai4desci.com/" )
-    st.sidebar.button("[Learn More About AI4DeSci]](%s)" % "https://ai4desci.com/" )
-################# Sidebar
+# # Sidebar content
+# with st.sidebar:
+#     st.sidebar.header("AI4DeSci Dashboard")
+#     st.sidebar.button("[Collaboration Hub](%s)" % "https://hub.ai4desci.com" )
+#     st.sidebar.button("[Public Collaborative Journal Note [pass: akashathon2024]](%s)" % "https://notes.ai4desci.com/" )
+#     st.sidebar.button("[Learn More About AI4DeSci]](%s)" % "https://ai4desci.com/" )
+# ################# Sidebar
 
 col1, col2, col3 = st.columns([1,1,1])
 with col2:
@@ -224,26 +224,26 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-banner_html = """
-<style>
-    .banner {
-        width: 100%;
-        background-color: #FF414C;  /* Light grey background */
-        color: white;  /* Text color */
-        padding: 10px 0;  /* Padding around text and logo */
-        display: flex;  /* Use flexbox for alignment */
-        align-items: center;  /* Center items vertically */
-        justify-content: center;  /* Center items horizontally */
-        font-size: 24px;  /* Increased font size */
-    }
-</style>
-<div class="banner">
-    <span>This app is part of AI4DeSci Use-Case for Akashathon [17 April - 17 May 2024]</span>
-</div>
-"""
+# banner_html = """
+# <style>
+#     .banner {
+#         width: 100%;
+#         background-color: #FF414C;  /* Light grey background */
+#         color: white;  /* Text color */
+#         padding: 10px 0;  /* Padding around text and logo */
+#         display: flex;  /* Use flexbox for alignment */
+#         align-items: center;  /* Center items vertically */
+#         justify-content: center;  /* Center items horizontally */
+#         font-size: 24px;  /* Increased font size */
+#     }
+# </style>
+# <div class="banner">
+#     <span>This app is part of AI4DeSci Use-Case for Akashathon [17 April - 17 May 2024]</span>
+# </div>
+# """
 
-# Inject the HTML and CSS
-st.markdown(banner_html, unsafe_allow_html=True)
+# # Inject the HTML and CSS
+# st.markdown(banner_html, unsafe_allow_html=True)
 
 category_colors_cycle = itertools.cycle(
     [

@@ -162,13 +162,15 @@ export default function Navbar() {
               ) : (
                 <>
                   <Link
-                    href="/auth/signin"
+                    // href="/auth/signin"
+                    href="https://accounts.ai4desci.com/sign-in"
                     className="w-full whitespace-nowrap rounded bg-primary px-6 py-3 text-center font-heading text-white hover:bg-opacity-90 lg:w-auto"
                   >
                     Sign In
                   </Link>
                   <Link
-                    href="/auth/signup"
+                    // href="/auth/signup"
+                    href="https://accounts.ai4desci.com/sign-up"
                     className="w-full whitespace-nowrap rounded bg-[#222C40] px-6 py-3 text-center font-heading text-white hover:bg-opacity-90 lg:w-auto"
                   >
                     Sign Up

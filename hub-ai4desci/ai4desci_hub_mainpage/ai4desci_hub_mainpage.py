@@ -113,19 +113,19 @@ def navbar():
     )
 
 
-# Add the sidebar with buttons linking to different webpages
-st.sidebar.header("AI4DeSci Dashboard")
-if st.sidebar.button("Science Crowdsourcing"):
-    st.experimental_set_query_params()
-    st.markdown("""<script>window.location.href = 'https://app.ai4desci.com/';</script>""", unsafe_allow_html=True)
+# # Add the sidebar with buttons linking to different webpages
+# st.sidebar.header("AI4DeSci Dashboard")
+# if st.sidebar.button("Science Crowdsourcing"):
+#     st.experimental_set_query_params()
+#     st.markdown("""<script>window.location.href = 'https://app.ai4desci.com/';</script>""", unsafe_allow_html=True)
 
-if st.sidebar.button("Public Collaborative Journal Note [pass: akashathon2024]"):
-    st.experimental_set_query_params()
-    st.markdown("""<script>window.location.href = 'https://notes.ai4desci.com/';</script>""", unsafe_allow_html=True)
+# if st.sidebar.button("Public Collaborative Journal Note [pass: akashathon2024]"):
+#     st.experimental_set_query_params()
+#     st.markdown("""<script>window.location.href = 'https://notes.ai4desci.com/';</script>""", unsafe_allow_html=True)
 
-if st.sidebar.button("Learn More About AI4DeSci"):
-    st.experimental_set_query_params()
-    st.markdown("""<script>window.location.href = 'https://ai4desci.com/';</script>""", unsafe_allow_html=True)
+# if st.sidebar.button("Learn More About AI4DeSci"):
+#     st.experimental_set_query_params()
+#     st.markdown("""<script>window.location.href = 'https://ai4desci.com/';</script>""", unsafe_allow_html=True)
 
 
 col1, col2, col3 = st.columns([1,1,1])
@@ -175,26 +175,26 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-banner_html = """
-<style>
-    .banner {
-        width: 100%;
-        background-color: #FF414C;  /* Light grey background */
-        color: white;  /* Text color */
-        padding: 10px 0;  /* Padding around text and logo */
-        display: flex;  /* Use flexbox for alignment */
-        align-items: center;  /* Center items vertically */
-        justify-content: center;  /* Center items horizontally */
-        font-size: 24px;  /* Increased font size */
-    }
-</style>
-<div class="banner">
-    <span>This app is part of AI4DeSci Use-Case for Akashathon [17 April - 17 May 2024]</span>
-</div>
-"""
+# banner_html = """
+# <style>
+#     .banner {
+#         width: 100%;
+#         background-color: #FF414C;  /* Light grey background */
+#         color: white;  /* Text color */
+#         padding: 10px 0;  /* Padding around text and logo */
+#         display: flex;  /* Use flexbox for alignment */
+#         align-items: center;  /* Center items vertically */
+#         justify-content: center;  /* Center items horizontally */
+#         font-size: 24px;  /* Increased font size */
+#     }
+# </style>
+# <div class="banner">
+#     <span>This app is part of AI4DeSci Use-Case for Akashathon [17 April - 17 May 2024]</span>
+# </div>
+# """
 
-# Inject the HTML and CSS
-st.markdown(banner_html, unsafe_allow_html=True)
+# # Inject the HTML and CSS
+# st.markdown(banner_html, unsafe_allow_html=True)
 
 category_colors_cycle = itertools.cycle(
     [
